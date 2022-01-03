@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+hody {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #eed;
+}
+
+/* global */
+
+.header {
+  background-color: #fff;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand_name {
+  font-weight: 900;
+  text-shadow: 0 0 3px black;
+}
+
+.nav-container > a {
+  text-decoration: none;
+  color: rgb(9, 0, 134);
+  padding-left: 10px;
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.nav-container > a:hover {
+  color: white;
+  text-shadow: 0 0 10px silver;
+  outline: 3px;
+  transform: scale(1.5, 1.5);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-image: url("../hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  max-height: 400px;
+}
+
+.hero > .text {
+  min-width: 0;
+  flex-basis: 50%;
+  color: #fff;
+}
+
+.hero-btn {
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: all .2s;
+}
+
+.hero-btn:hover {
+  text-shadow: 0 0 5px white;
+  transform: translate(2);
+
+}
+
+.hero > .image-container img {
+  box-shadow: 0 0 60px silver;
+  width: 100%;
+}
+
+.hero > .image-container {
+  min-width: 0;
+  flex-basis: 50%;
+}
